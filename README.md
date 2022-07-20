@@ -8,9 +8,9 @@ This project shows history about a shipment.
 
 Install the required dependencies with `npm install` command.
 
-### `npm start`
+### Launch the server
 
-Runs the app in the development mode.\
+Runs the app in the development mode with the `npm start` command.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Change the dataset
