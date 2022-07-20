@@ -1,0 +1,68 @@
+.shipmentHistory p {
+    margin: 0;
+}
+
+
+.shipmentHistory__title{
+    text-align: center;
+    color: #696f77;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    padding: 20px;
+}
+
+.shipmentHistory__item{
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .shipmentHistory__title{
+        text-align: left;
+    }
+}
+
+.shipmentHistory__detail{
+    color: #888e96;
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+.shipmentHistory__date{
+    color: #1c355e;
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+.shipmentHistory__status{
+    color: #1c355e;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
+.shipmentHistory__timeline{
+    align-content: flex-start;
+    text-align: right;
+}
+
+.shipmentHistory__info{
+    align-content: flex-start;
+}
+
+
+
+#dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+}
+
+#timeliner{
+    width: 2px;
+    /* min-height: 30px; */
+    min-height: 100px;
+    border-radius: 10px;
+    flex: 1;
+}
