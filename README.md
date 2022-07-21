@@ -22,3 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Provide a new dataset by changing data.json in the public folder, \
 or give a link to an external server.
 To do so, open src/axios.js and change baseURL with the new link
+
+## Screenshot
+![screenshot](https://user-images.githubusercontent.com/64667821/180329579-9ad608cc-5fe6-447e-9610-a136622fad55.png)
+
