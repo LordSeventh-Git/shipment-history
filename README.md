@@ -4,6 +4,10 @@ This project shows history about a shipment.
 
 ## Start the development server
 
+### Requirements
+
+[NodeJS](https://nodejs.org/en/download) is required to run this project.
+
 ### Dependencies
 
 Install the required dependencies with `npm install` command.

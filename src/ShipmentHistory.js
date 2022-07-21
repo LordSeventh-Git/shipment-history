@@ -77,15 +77,39 @@ function ShipmentHistoryItem({
   shipmentIsDelayed,
   willBeDelayed,
 }) {
+  function get_nth_suffix(date) {
+    switch (date) {
+      case 1:
+      case 21:
+      case 31:
+        return date + "st";
+      case 2:
+      case 22:
+        return date + "nd";
+      case 3:
+      case 23:
+        return date + "rd";
+      default:
+        return date + "th";
+    }
+  }
+
   const getFormattedDate = (timestamp) => {
-    return Intl.DateTimeFormat("en-US", {
-      dateStyle: "long",
+    let formattedDate = Intl.DateTimeFormat("en-US", {
+      month: "long",
+      day: "2-digit",
     }).format(new Date(timestamp));
+    formattedDate = formattedDate.split(" ");
+    let formattedDay = get_nth_suffix(Number(formattedDate[1]));
+    return `${formattedDate[0]} ${formattedDay}`;
   };
   const getFormattedTime = (timestamp) => {
     return Intl.DateTimeFormat("en-US", {
       timeStyle: "short",
-    }).format(new Date(timestamp));
+    })
+      .format(new Date(timestamp))
+      .toLowerCase()
+      .replace(/\s+/g, "");
   };
   const color = shipmentIsDelayed ? "#f6a800" : "#428bca";
   const place =
