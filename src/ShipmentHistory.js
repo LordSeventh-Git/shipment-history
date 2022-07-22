@@ -95,6 +95,7 @@ function ShipmentHistoryItem({
   }
 
   const getFormattedDate = (timestamp) => {
+    if (!timestamp) return "";
     let formattedDate = Intl.DateTimeFormat("en-US", {
       month: "long",
       day: "2-digit",
@@ -104,6 +105,7 @@ function ShipmentHistoryItem({
     return `${formattedDate[0]} ${formattedDay}`;
   };
   const getFormattedTime = (timestamp) => {
+    if (!timestamp) return "";
     return Intl.DateTimeFormat("en-US", {
       timeStyle: "short",
     })
